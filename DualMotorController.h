@@ -11,7 +11,7 @@ class DualMotorController
     int _forward;
     void (DualMotorController::*current_direction)();
   public:
-    DualMotorController(AF_DCMotor&, AF_DCMotor&);
+    DualMotorController(AF_DCMotor*, AF_DCMotor*);
     void left();
     void right();
     void straight();
