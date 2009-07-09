@@ -1,0 +1,48 @@
+h1. Dual Motor Controller
+
+Adruino/Wiring Library for controlling two motors using the Adafruit Motor Controller Shield.
+
+h2. Example
+
+<pre>
+<code>
+#include <AFMotor.h>
+#include <DualMotorController.h>
+
+AF_DCMotor left_motor(2);
+AF_DCMotor right_motor(1);
+
+DualMotorController tank(&left_motor, &right_motor);  
+
+void setup() {
+}
+
+void loop() {
+  tank.setSpeed(255);
+  tank.forward();
+  delay(1000);
+  tank.left();
+  delay(100);
+  tank.right();
+  delay(100);
+  tank.reverse();
+  delay(1000);
+  tank.stop();
+  delay(1000);
+}
+</code>
+</pre>
+
+h2. Install
+
+cd your_arduino_folder/hardware/libraries/
+git clone git://github.com/kristopher/DualMotorController
+
+h2. Dependencies
+
+"Adafruit Motor Shield":http://www.ladyada.net/make/mshield/index.html
+"Adafruit DC Motor library":http://www.ladyada.net/media/mshield/AFMotor_28-06-09.zip
+
+h2. Homepage
+
+"http://github.com/kristopher/DualMotorController":http://github.com/kristopher/DualMotorController
