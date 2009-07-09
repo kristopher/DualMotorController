@@ -18,8 +18,6 @@ class DualMotorController
     void stop();
     void forward();
     void reverse();
-    void increaseSpeed();
-    void decreaseSpeed();
     void setSpeed(int);
     int isReversing();
     void reset();

@@ -59,20 +59,6 @@ void DualMotorController::reverse() {
   (this->*current_direction)();
 }
 
-void DualMotorController::increaseSpeed() {
-  // TODO Implement speed increasing
-  speed = 255;
-  _left_motor->setSpeed(speed);
-  _right_motor->setSpeed(speed);
-}
-
-void DualMotorController::decreaseSpeed() {
-  // TODO Implement speed decreasing
-  speed = 0;
-  _left_motor->setSpeed(speed);
-  _right_motor->setSpeed(speed);
-}
-
 void DualMotorController::setSpeed(int new_speed) {
   speed = new_speed;
   _left_motor->setSpeed(speed);
