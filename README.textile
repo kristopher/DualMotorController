@@ -1,6 +1,6 @@
 h1. Dual Motor Controller
 
-Adruino/Wiring Library for controlling two motors using the Adafruit Motor Controller Shield.
+Adruino/Wiring Library for controlling two motors using the Adafruit Motor Shield.
 
 h2. Example
 
@@ -36,7 +36,7 @@ void loop() {
 h2. Install
 
 cd your_arduino_folder/hardware/libraries/
-git clone git://github.com/kristopher/DualMotorController
+git clone git://github.com/kristopher/DualMotorController.git
 
 h2. Dependencies
 
