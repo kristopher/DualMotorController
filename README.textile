@@ -20,12 +20,14 @@ void setup() {
 void loop() {
   tank.setSpeed(255);
   tank.forward();
+  tank.straight();
   delay(1000);
   tank.left();
   delay(100);
   tank.right();
   delay(100);
   tank.reverse();
+  tank.straight();
   delay(1000);
   tank.stop();
   delay(1000);
